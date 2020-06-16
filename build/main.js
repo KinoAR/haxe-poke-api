@@ -8,6 +8,8 @@ Main.main = function() {
 		haxe_Log.trace("Berry Response",{ fileName : "src/Main.hx", lineNumber : 11, className : "Main", methodName : "main", customParams : [response]});
 	},function(reject) {
 		haxe_Log.trace("Failed request",{ fileName : "src/Main.hx", lineNumber : 13, className : "Main", methodName : "main", customParams : [reject]});
+	}).catch(function(reject) {
+		haxe_Log.trace(reject,{ fileName : "src/Main.hx", lineNumber : 15, className : "Main", methodName : "main"});
 	});
 };
 Math.__name__ = true;
