@@ -11,6 +11,8 @@ class Main {
       trace("Berry Response", response);
     }, (reject) -> {
       trace("Failed request", reject);
+    }).catchError((reject) -> {
+      trace(reject);
     });
   }
 }

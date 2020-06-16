@@ -13,6 +13,7 @@ typedef APIOptions = {
 extern class Pokedex {
   public function new(?options:APIOptions):Void;
   public function getBerryByName(berryName:String) : Promise<Berry>;
-  public function getBerryFirmnessByName(firmness:String) : Promise<String>;
-  public function getBerryFlavorByName(flavor:String) : Promise<String>;
+  public function getBerryFirmnessByName(firmness:String) : Promise<BerryFirmness>;
+  public function getBerryFlavorByName(flavor:String) : Promise<BerryFlavor>;
+  public function getContestTypeByName(contestName:String) : Promise<Contest>;
 }
