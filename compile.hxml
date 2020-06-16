@@ -1,0 +1,5 @@
+
+-cp src
+-js main.js
+-main Main
+-debug
