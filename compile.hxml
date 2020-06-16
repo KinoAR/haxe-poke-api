@@ -1,5 +1,5 @@
 
 -cp src
--js main.js
+-js build/main.js
 -main Main
 -debug

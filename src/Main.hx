@@ -1,11 +1,16 @@
 import Pokedex;
 
-@:jsRequire("pokedex-promise-v2")
+
 
 class Main {
 
   public static function main() {
     var pokedex = new Pokedex();
-    trace(pokedex);
+    pokedex.getBerryByName("cheri")
+    .then((response) -> {
+      trace("Berry Response", response);
+    }, (reject) -> {
+      trace("Failed request", reject);
+    });
   }
 }
