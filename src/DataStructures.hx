@@ -286,3 +286,21 @@ typedef Machine = {
   move:NameUrl,
   version_group:NameUrl
 }
+
+typedef Move = {
+  id:Int,
+  name:String,
+  accuracy:Int,
+  effect_chance:Int,
+  pp:Int,
+  priority:Int,
+  power:Int,
+  
+  contest_type:NameUrl,
+  contest_effect:Url,
+  generation:NameUrl,
+  names:Array<LangNames>,
+  super_contest_effect:Url,
+  target:NameUrl,
+  type: NameUrl,
+}
