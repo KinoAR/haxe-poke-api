@@ -4,6 +4,7 @@ import DataStructures;
 import haxe.extern.Rest;
 import haxe.extern.EitherType;
 
+
 typedef EitherT<T1, T2> = EitherType<T1, T2>;
 //EitherT<String, Array<Dynamic>>;
 
@@ -38,4 +39,31 @@ extern class Pokedex {
   public function getItemFlingEffectByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<ItemFlingEffect, Array<ItemFlingEffect>>>;
   public function getItemPocketByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<ItemPocket, Array<ItemPocket>>>;
   public function getMachineById(id:Int) : Promise<EitherT<Machine, Array<Machine>>>;
+  public function getMoveByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<Move, Array<Move>>>;
+  public function getMoveAilmentByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<MoveAilment, Array<MoveAilment>>>;
+  public function getMoveBattleStyleByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<MoveStyle, Array<MoveStyle>>>;
+  public function getMoveCategoryByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<MoveCategory, Array<MoveCategory>>>;
+  public function getMoveDamageClassByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<MoveDamage, Array<MoveDamage>>>;
+  public function getMoveLearnMethodByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<MoveLearnMethod, Array<MoveLearnMethod>>>;
+  public function getMoveTargetByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<MoveTarget, Array<MoveTarget>>>;
+  public function getLocationByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<Location, Array<Location>>>;
+  public function getLocationAreaByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<LocationArea, Array<LocationArea>>>;
+  public function getPalParkAreaByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<PalParkArea, Array<PalParkArea>>>;
+  public function getRegionByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<Region, Array<Region>>>;
+  public function getAbilityByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<Ability, Array<Ability>>>;
+  public function getCharacteristicById(id:EitherT<Int, Array<Int>>) : Promise<EitherT<Characteristic, Array<Characteristic>>>;
+  public function getEggGroupByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<EggGroup, Array<EggGroup>>>;
+  public function getGenderByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<Gender, Array<Gender>>>;
+  public function getGrowthRateByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<GrowthRate, Array<GrowthRate>>>;
+  public function getNatureByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<Nature, Array<Nature>>>;
+  public function getPokeathlonStatByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<PokeathlonStat, Array<PokeathlonStat>>>;
+  public function getPokemonByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<Pokemon, Array<Pokemon>>>;
+  public function getPokemonHabitatByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<PokemonHabitat, Array<PokemonHabitat>>>;
+  public function getPokemonShapeByName(name:EitherT<String, Array<Dynamic>>) :Promise<EitherT<PokemonShape, Array<PokemonShape>>>;
+  public function getPokemonSpeciesByName(name:EitherT<String, Array<Dynamic>>) :Promise<EitherT<PokemonSpecies, Array<PokemonSpecies>>>;
+  public function getStatByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<PokemonStat, Array<PokemonStat>>>;
+  public function getTypeByName(name:EitherT<String, Array<Dynamic>>) :Promise<EitherT<PokemonType, Array<PokemonType>>>;
+  public function getLanguageByName(name:EitherT<String, Array<Dynamic>>) : Promise<EitherT<Language, Array<Language>>>;
+
+  //No Root End Points
 }
