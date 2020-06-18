@@ -18,4 +18,15 @@ Contains all of the same functionality as the original API
 
 ```bash
 haxe compile.hxml
+
 ```
+
+### How To Test
+```
+node build/main.js
+```
+
+
+### API End Points
+> End Points can be found here
+## (Pokedex Promise V2)[https://github.com/PokeAPI/pokedex-promise-v2#example-requests]
